@@ -1,8 +1,19 @@
 package com.tddpj.productorderservice.product;
 
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 import org.springframework.util.Assert;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "products")
+@Getter
+@NoArgsConstructor(access = AccessLevel.PROTECTED, force = true)
 class Product {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private final String name;
     private final int price;
@@ -17,11 +28,4 @@ class Product {
         this.discountPolicy = discountPolicy;
     }
 
-    public void assignId(Long aLong) {
-        this.id = id;
-    }
-
-    public Long getId() {
-        return id;
-    }
 }
