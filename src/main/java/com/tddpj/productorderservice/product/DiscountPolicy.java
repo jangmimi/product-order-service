@@ -1,6 +1,6 @@
 package com.tddpj.productorderservice.product;
 
-enum DiscountPolicy {
+public enum DiscountPolicy {
     NONE
 
 }
