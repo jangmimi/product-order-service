@@ -1,6 +1,5 @@
 package com.tddpj.productorderservice.order;
 
-import com.tddpj.productorderservice.order.CreateOrderRequest;
 import io.restassured.RestAssured;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;
