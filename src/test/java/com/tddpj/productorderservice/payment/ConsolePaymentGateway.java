@@ -1,5 +1,8 @@
 package com.tddpj.productorderservice.payment;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class ConsolePaymentGateway implements PaymentGateway {
 
     @Override

@@ -1,7 +1,9 @@
 package com.tddpj.productorderservice.payment;
 
 import com.tddpj.productorderservice.order.Order;
+import org.springframework.stereotype.Component;
 
+@Component
 class PaymentService {
     private final PaymentPort paymentPort;
 
